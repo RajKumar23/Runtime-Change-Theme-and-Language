@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ImageViewDarkMode"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:tint="@color/text_black"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_dark" />
+
+    <TextView
+        android:id="@+id/TextViewTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/Theme"
+        android:textColor="@color/text_black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ImageViewDarkMode"
+        app:layout_constraintTop_toTopOf="@+id/ImageViewDarkMode" />
+
+    <TextView
+        android:id="@+id/textViewSelectedMode"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="@string/light"
+        android:textColor="@color/text_black"
+        app:layout_constraintEnd_toEndOf="@+id/TextViewTheme"
+        app:layout_constraintStart_toStartOf="@+id/TextViewTheme"
+        app:layout_constraintTop_toBottomOf="@+id/TextViewTheme" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/groupTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="ImageViewDarkMode,TextViewTheme, textViewSelectedMode" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ImageViewLanguage"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:tint="@color/text_black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ImageViewDarkMode"
+        app:srcCompat="@drawable/ic_language" />
+
+    <TextView
+        android:id="@+id/TextViewLanguage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/language"
+        android:textColor="@color/text_black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ImageViewLanguage"
+        app:layout_constraintTop_toTopOf="@+id/ImageViewLanguage" />
+
+    <TextView
+        android:id="@+id/textViewSelectedLanguage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="@string/selected_language"
+        android:textColor="@color/text_black"
+        app:layout_constraintEnd_toEndOf="@+id/TextViewLanguage"
+        app:layout_constraintStart_toStartOf="@+id/TextViewLanguage"
+        app:layout_constraintTop_toBottomOf="@+id/TextViewLanguage" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/groupLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:constraint_referenced_ids="ImageViewLanguage,TextViewLanguage, textViewSelectedLanguage" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Welcome_message"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSelectedLanguage" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSelectedLanguage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

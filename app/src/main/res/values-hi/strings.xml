@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LanguageTheme</string>
+    <string name="Welcome_message">मेरे ऐप में आपका स्वागत है</string>
+    <string name="language">भाषा: हिन्दी</string>
+    <string name="selected_language">हिन्दी</string>
+    <string name="english">English</string>
+    <string name="tamil">தமிழ்</string>
+    <string name="hindi">हिन्दी</string>
+    <string name="choose_language">भाषा चुनें</string>
+    <string name="Theme">विषय</string>
+    <string name="dark">अंधेरा</string>
+    <string name="light">रोशनी</string>
+    <string name="choose_theme">थीम चुनें</string>
+    <string name="next">आगे</string>
+</resources>

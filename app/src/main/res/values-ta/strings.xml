@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LanguageTheme</string>
+    <string name="Welcome_message">எனது பயன்பாட்டிற்கு வருக</string>
+    <string name="language">மொழி</string>
+    <string name="selected_language">தமிழ்</string>
+    <string name="english">English</string>
+    <string name="tamil">தமிழ்</string>
+    <string name="hindi">हिन्दी</string>
+    <string name="choose_language">மொழியைத் தேர்வுசெய்க</string>
+    <string name="Theme">தீம்</string>
+    <string name="dark">இருள்</string>
+    <string name="light">ஒளி</string>
+    <string name="choose_theme">தீம் தேர்வு</string>
+    <string name="next">அடுத்தது</string>
+</resources>

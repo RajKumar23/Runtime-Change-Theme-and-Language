@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">LanguageTheme</string>
+    <string name="Welcome_message">Welcome To My App</string>
+    <string name="language">Language</string>
+    <string name="selected_language">English</string>
+    <string name="english">English</string>
+    <string name="tamil">Tamil</string>
+    <string name="hindi">Hindi</string>
+    <string name="choose_language">Choose Language</string>
+    <string name="Theme">Theme</string>
+    <string name="dark">Dark</string>
+    <string name="light">Light</string>
+    <string name="choose_theme">Choose Theme</string>
+    <string name="next">Next</string>
+</resources>
